@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd4e8cf9d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name"><span>M</span>ohan.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend developer</p>
+                <h1>Hi, I'm <span>Mohan</span><br>Bharti from India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/portfolio.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate and skilled frontend developer with a deep love for crafting engaging and user-centric digital experiences. With a strong foundation in web technologies and a keen eye for design, I thrive on turning imaginative concepts into intuitive, responsive, and visually appealing interfaces. <br>  I'm actively seeking new challenges and opportunities to contribute my skills to dynamic projects. Whether it's creating captivating user interfaces, optimizing website performance, or collaborating on exciting web applications, I'm ready to dive in and make an impact. Let's connect and explore how I can be a valuable asset to your team. </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Training')">Training</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces </li>
+                            <li><span>Web Development</span><br>Web/App development</li>
+                            <li><span>Frontend Development</span><br>Creating tools that improve site interaction regardless of the browser.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Training">
+                        <ul>
+                            <li><span>June 2023 - Current</span><br>Web Developmet training from Apnacollege </li>
+                            <li><span>April 2023 - May 2023</span><br>Web development training from Internshala</li>
+                            <li><span>Jan. 2023 - March 2023</span><br>CSS, HTML, JavaScript, React.js training from Udemy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022 - 2023</span><br>Training in Web development.</li>
+                            <li><span>2017 - 2021  </span><br><b>B.Tech</b><br>A.K.T.U. University <br>College- Kiet Group Of Institution And Technology, Ghaziabad</li>
+                            <li><span>2014 - 2016</span><br><b>Intermediate</b><br>Vikas S IC Gharighat Mahrupur
+                            Basti UP.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> As a frontend developer, I have gained expertise in a wide range of programming languages, frameworks, and tools. On the front-end, I am proficient in HTML, CSS, and JavaScript, along with popular library such as React. I am skilled at translating design concepts into responsive and intuitive user interfaces, ensuring a delightful user experience across different devices and platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> As a frontend developer, I have gained expertise in a wide range of programming languages, frameworks, and tools. I'm actively seeking new challenges and opportunities to contribute my skills to dynamic projects. Whether it's creating captivating user interfaces, optimizing website performance, or collaborating on exciting web applications, I'm ready to dive in and make an impact. Let's connect and explore how I can be a valuable asset to your team..</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Frontend Development</h2>
+                    <p>As a frontend developer, I am passionate about creating engaging and user-friendly websites that enhance the user experience. I have a strong understanding of HTML, CSS, and JavaScript, and I am
+                    familiar with front-end library such as React.js .During my learning, I developed several small-scale projects, including a responsive e-commerce website .</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Countdown-timer</h3>
+                        <p>Welcome to my Countdown Timer website! Whether you're anticipating an event, a deadline, or simply savoring the passing moments, my intuitive and sleek timer keeps you on track. </p>
+                        <a href=" https://mohanbharti00304.github.io/Countdown-timer/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Simon-Says-Game</h3>
+                        <p>Welcome to the Simon Says Game website! Challenge your memory and reflexes in this classic game of pattern repetition. Follow Simon's lead and replicate the sequence to level up. Whether you're a casual player or a memory master, get ready to enhance your cognitive skills and have a blast!</p>
+                        <a href=" https://mohanbharti00304.github.io/Simon-Says-Game/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shoping Website</h3>
+                        <p>Step into the virtual shopping world with our Amazon Clone website! Discover a vast range of products, from electronics to fashion, all at your fingertips. Explore user-friendly navigation, detailed product pages, and secure checkout. </p>
+                        <a href="https://mohanbharti00304.github.io/Amazon-clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Online Music Website</h3>
+                        <p>Step into the world of RhythmoClone, a dynamic Spotify clone crafted using the power of HTML and CSS. Immerse yourself in a personalized music streaming experience where the harmony of design and functionality meet. </p>
+                        <a href=" https://mohanbharti00304.github.io/Spotify-clone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>Welcome to Quizzify, an innovative quiz app that seamlessly combines HTML, CSS, and JavaScript to deliver an engaging and enlightening learning experience. Prepare to challenge yourself, have fun, and broaden your horizons through thought-provoking quizzes.</p>
+                        <a href=" https://mohanbharti00304.github.io/Quiz-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Fitness Center</h3>
+                        <p>Step into a world of health and wellness at FitZone, a premier fitness center brought to life through a blend of HTML and CSS design. Discover a space where cutting-edge workouts and an immersive online experience unite to redefine your fitness journey.</p>
+                        <a href=" https://mohanbharti00304.github.io/Fitness-center/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>Welcome to PixelFrame, where the art of photography comes alive through the synergy of HTML and CSS. Immerse yourself in a visual journey that showcases the beauty and power of imagery, all within a meticulously designed online platform.</p>
+                        <a href="https://mohanbharti00304.github.io/photography/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Analog Clock</h3>
+                        <p>Welcome to ChronoGlow, a captivating digital platform that brings the classic charm of an analog clock to life through a fusion of HTML, CSS, and JavaScript. Immerse yourself in the rhythmic passage of time with an interactive and visually stunning experience.</p>
+                        <a href="https://mohanbharti00304.github.io/Analog-clock/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------Contact----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> bhartimohan4296@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7310429672</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mohan.bharti.5473894" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/MohanBh29662737" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mohan-bharti-a165a4273/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Mohanbharti00304" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./images/my cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Mohan. Made with  <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpZehBYqUH0t-hx2gFNR1paGDxTuI2w50h7_E1H17D4ARupdmHP-RBlF8qYeShuySRWw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
